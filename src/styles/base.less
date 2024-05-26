@@ -1,0 +1,100 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import "./variable.less";
+
+// Reset
+*                                           { margin: 0; padding: 0; user-select: none; -ms-user-select: none; -webkit-user-select: none; touch-action: manipulation;
+  &:visited                               { color: inherit; }}
+html, body                                  { overscroll-behavior-x: none; }
+*, span, p, h1, h2, h3, h4, h5, h6, div, a,
+select, input, textarea, button, ol, ul     { font-size: @fM; font-family: 'Noto Sans TC', 'Roboto'; }
+span, p, h1, h2, h3, h4, h5, h6, div,
+input, textarea, ol, ul                     { color: @cG1; overflow-wrap: break-word; }
+a                                           { border-radius: 5px; color: inherit; text-decoration: none !important; }
+a:hover                                     { cursor: pointer;
+  @media screen and (min-width: @sD)        { box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2); }}
+button                                      { border: none; }
+button:hover                                { cursor: pointer;
+  @media screen and (min-width: @sD)        { box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2); }}
+input                                       { border: 0; padding: 0; -webkit-text-fill-color: @cG1; background-color: transparent; }
+input:focus                                 { box-shadow: none !important; outline: none; }
+input:-webkit-autofill                      { color: @c1 !important; background-color: transparent !important; box-shadow: 0 0 0px 1000px white inset !important; background-clip: content-box !important; }
+input::placeholder, textarea::placeholder   { color: @cG4; -webkit-text-fill-color: @cG4; }
+textarea                                    { border: 0; resize: none; }
+textarea:focus                              { box-shadow: none !important; outline: none; }
+select                                      { -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; border: 0; }
+select:hover                                { cursor: pointer; }
+label                                       { cursor: pointer; }
+img                                         { object-fit: cover; }
+i, svg                                      { text-decoration: none !important; }
+iframe                                      { border: 0; }
+*, :after, :before                          { box-sizing: border-box !important; -webkit-box-sizing: border-box; }
+
+
+// loading
+.loading { position: relative; border: none !important; z-index: 0; border-radius: 10px !important; overflow: hidden;}
+.loading::before { position: absolute; display: block; content: ''; width: 100%; height: 100%; left: 0; top: 0; right: 0; bottom: 0; margin: 0; z-index: 1;
+  background: #F6F6F6;
+  background: linear-gradient(to right, #d4d4d4 8%, #e4e2e2 18%, #d4d4d4 33%);
+  background-size: 800px 104px;
+  -webkit-animation: placeHolderShimmer 2s infinite;
+  animation: placeHolderShimmer 2s infinite;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+// Components
+.header { width: 100%; padding: 10px 15px; top: 0; left: 0; position: sticky; display: flex; align-items: center; justify-content: space-between; background-color: @c2; z-index: 1;
+  .header__left, .header__right { gap: 5px; display: flex; align-items: center; }
+  a { min-width: 40px; min-height: 40px; padding: 0 5px; display: flex; align-items: center; justify-content: center; 
+    @media screen and (max-width: @sSE) { min-width: 30px; min-height: 30px; padding: 0; }
+  }
+  .header__back img { height: 24px; }
+  .header__menu img { height: 24px; }
+  .header__logo img { height: 28px; margin-top: 5px; }
+  .profile__info { display: flex; flex-direction: column; align-items: flex-end; }
+  .profile__sub-name { margin-bottom: -5px; font-size: @fS; color: rgba(255, 255, 255, 0.60); }
+  .profile__name { font-size: @fM; color: white; }
+  .profile__img { width: 30px; height: 30px; border-radius: 99px; }
+}
+
+/* 右上選單彈出popup切換公司 */
+.pop--top .pop__body { padding: 40px 20px !important;
+    .current-company {
+        display: flex; flex-flow: wrap; flex-direction: column; justify-content: center; align-items: center;
+        .current-company__logo { display: flex; flex-flow: nowrap; justify-content: center; align-items: center; width: 80px; height: 80px; border: 2px solid @cG5; border-radius: 99em; overflow: hidden;
+            > img { display: block; width: 100%; height: auto; }
+        }
+        .current-company__name { margin-top: 3px; font-size: @fL; font-weight: bold; text-align: center; }
+    }
+
+    .other-list { width: 100%; display: flex; flex-flow: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 10px;
+        .other-list__item { width: 100%; padding: 10px; display: flex; flex-flow: nowrap; justify-content: flex-start; align-items: center; gap: 10px; border-radius: 10px;
+            &:hover { background: @cBg; }
+
+            .other-list__item__logo { display: flex; flex-flow: nowrap; justify-content: center; align-items: center; width: 30px; height: 30px; border: 2px solid @cG5; border-radius: 99em; overflow: hidden;
+                > img { display: block; width: 100%; height: auto; }
+                > i { color: @cG3; font-size: @fM; }
+            }
+            .other-list__item__name { width: calc(100% - 40px); color: @cG1; font-weight: 600;
+                &.add { color: @cG3; font-weight: normal; }
+                &.logout { color: @cG3; font-weight: normal; }
+            }  
+        }
+    }
+}

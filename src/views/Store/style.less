@@ -1,0 +1,36 @@
+@import "@/styles/variable.less";
+
+.store { width: 100%; max-width: 500px; padding: 20px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 20px;
+    h1 { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; color: @c2; 
+        b { font-size: @fXL; }
+    }
+    h2 { margin: 0; font-size: @fL; font-weight: bold; }
+    h3 { margin: -10px 0 0 0; padding-top: 15px; color: @cG3; font-size: @fM; font-weight: bold; border-top: 1px solid @cG4; }
+
+    .payment-way {
+        .payment-way__list { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; gap: 5px;
+            margin-bottom: 10px; padding-bottom: 15px; border-bottom: 1px solid @cG4;
+
+            .payments-icons { width: 40px;
+                span:not(.spacer-line) { width: 40px; background: @cBg; }
+            }
+            .payments-name { width: 100%; font-weight: bold; 
+                .fs { display: block; margin-top: -3px; font-size: @fS; font-weight: normal; }
+            }
+            .payment-setting { display: flex; flex-flow: nowrap; align-items: center; 
+                > span { display: inline-block; margin-right: 5px; white-space: nowrap; font-size: @fS; }
+            }
+        }
+        .payment-way__list.deactivate { filter: grayscale(1); -webkit-filter: grayscale(1); opacity: 0.5; 
+            .setting__switch { opacity: 0.5; }
+        }
+        .payment-way__list:last-child { margin-bottom: 0; border-bottom: 0; border-bottom: none; }
+    }
+}
+
+/* popup 確定儲存以下更新 */
+.pop--save-update .pop__body { overflow: inherit; 
+    .pop__content { color: @cG1; text-align: center; font-weight: 500;
+        .fs { display: block; margin-top: 5px; color: @cG3; font-size: @fS; font-weight: normal; }
+    }
+}

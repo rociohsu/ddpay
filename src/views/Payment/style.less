@@ -1,0 +1,103 @@
+@import "@/styles/variable.less";
+
+.payment { width: 100%; max-width: 500px; padding: 20px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 20px;
+    .payment-way {
+        .payment-way__list { padding-bottom: 0; margin-bottom: 0; border-bottom: none;
+            .payments-name { color: @c2; font-size: @fL; }
+        }
+        .payment-way__list.deactivate { filter: grayscale(0); -webkit-filter: grayscale(0); opacity: 1; 
+            .payment-setting { opacity: 0.5; }
+        }
+    }
+
+    .payment-info { display: flex; flex-flow: nowrap; flex-direction: row; justify-content: space-between; align-items: center; 
+
+        .payment-info__row { width: 100%; text-align: center; border-right: 1px solid @cG5;
+            .title { display: block; width: 100%; font-size: @fM; font-weight: bold; }
+            .content { display: block; font-size: @fL; }
+        }
+        .payment-info__row:last-child { border-right: none; }
+    }
+
+    .attetion-block { width: 100%; margin: 0 auto; padding: 15px; color: @cRed; border-radius: 10px; background: @cSkin;
+        display: flex; flex-direction: column; gap: 20px;
+
+        a { color: @cRed; text-decoration: underline !important; }
+        .attetion-block__top { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: flex-start; gap: 10px;
+            * { color: @cRed; font-size: @fM; }
+            a { display: inline-flex; flex-flow: nowrap; justify-content: center; align-items: center; padding: 5px 15px;
+                color: #FFFFFF; white-space: nowrap; background: @cRed; border-radius: 99em; text-decoration: none !important;
+                i { margin-left: 3px; color: #FFFFFF; }
+            }
+        }
+        .apply__input {
+            .input { 
+                input { border-color: #FFFFFF; }
+                input::placeholder { color: @cG3; -webkit-text-fill-color: @cG3; }
+            }
+        }
+    }
+
+    .apply__input { margin: 0 auto; }
+    .apply__open-pop { margin: 0 auto;
+        button {
+            .fs { width: 100%; padding: 0 5px; font-size: @fS; text-align: right; color: @cG3; }
+        }
+    }
+
+    .used-store { width: 100%; margin: 0 auto;
+        .title { width: 100%; font-size: @fM; font-weight: bold; }
+        .content { width: 100%; padding: 7px 10px; margin-top: 5px; border-radius: 10px; background: @cG6; 
+            .userd-store__search { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; 
+                width: 50%; margin-left: 50%; border-bottom: 1px solid @cG5; 
+                input { width: 100%; }
+                button { padding: 5px; color: @c2; }
+            }
+
+            .userd-store__list { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; gap: 5px; margin: 10px 0;
+
+                .userd-store__name { width: 100%; font-size: @fL; font-weight: 500; }
+                .userd-store__setting { display: flex; flex-flow: nowrap; align-items: center; 
+                    > span { display: inline-block; margin-right: 5px; white-space: nowrap; font-size: @fS; }
+                }
+            }
+            .userd-store__list.deactivate .userd-store__setting { opacity: 0.5; }
+        }
+    }
+    .used-store.deactivate { filter: grayscale(1); -webkit-filter: grayscale(1); opacity: 0.5; }
+}
+
+/* popup 選擇撥款帳戶 */
+.pop--select-account {
+    .account__radio-list { width: 100%; margin: 0 auto;
+        .account__radio-list__option { width: 100%; margin: 10px 0; padding-bottom: 10px; border-bottom: 1px solid @cG4; 
+            input { display: none; }
+            label { display: grid; justify-content: space-between; align-items: center; width: 100%;
+                .bank-name { font-size: @fM; }
+                .handling-fee { color: @cG3; font-size: @fS; }
+                i { grid-row-start: 1; grid-row-end: 3; grid-column-start: 2; grid-column-end: 3; width: 20px; height: 20px; margin-left: 5px; border-radius: 99em; background: @cG5; }
+            }
+            input:checked + label {
+                i { background: @c1 url("@/assets/icons/check-solid-w.svg") no-repeat center; background-size: 60%; }
+            }
+        }
+        .account__radio-list__option:last-child { border-bottom: none; }
+        .account__radio-list__option.deactivate { filter: grayscale(1); -webkit-filter: grayscale(1); opacity: 0.5; 
+            label i { display: none; }
+        }
+    }
+    .add-btn { display: inline-flex; flex-flow: nowrap; justify-content: center; align-items: center; 
+        padding: 5px; color: @c2; font-size: @fM; white-space: wrap; background: none; 
+        i { margin-left: 3px; }
+    }
+}
+
+/* popup 確定儲存以下更新 */
+.pop--save-update .pop__body { overflow: inherit; 
+    .pop__content { color: @cG1; text-align: center; font-weight: 500;
+        .fs { display: block;
+            * { color: @cG3; font-size: @fS; }
+            b { display: inline-block; margin-top: 5px; }
+        }
+    }
+}

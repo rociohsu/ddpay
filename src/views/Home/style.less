@@ -1,0 +1,98 @@
+@import "@/styles/variable.less";
+
+.home { width: 100%; max-width: 1440px; padding: 20px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 20px;
+    @media screen and (min-width: @sT) { flex-direction: row; }
+    .home__title { font-size: @fL; font-weight: bold; }
+    .home__notices, .home__payments, .home__stores { width: 100%; height: fit-content; min-height: 100px; padding: 10px; border-radius: 10px; display: flex; flex-direction: column; background-color: @cBg; }
+    .home__top { width: 100%; max-width: 768px; display: flex; flex-direction: column; gap: 20px;
+        @media screen and (min-width: @sT) { max-width: 440px; }
+
+        .home__banner { position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 10px; background-image: url("@/assets/imgs/banner.png"); z-index: 0;
+            h1 { padding: 10px 15px; color: #FFFFFF; font-size: @fXXXL; }
+            .home__about { position: absolute; right: 15px; top: 15px; padding: 5px 15px; white-space: nowrap; background: #FFFFFF; border-radius: 99em; 
+                i { margin-left: 5px; }
+            }
+            .payments-icons { position: absolute; width: 100%; left: 0; right: 0; bottom: 0; padding: 15px; }
+        }
+        .home__notices { 
+            .home__notices__list {
+                .home__notices__list__row { margin: 10px 0; padding-bottom: 10px; border-bottom: 1px solid @cG4;
+                    display: flex; flex-flow: nowrap; align-items: center; justify-content: space-between; border-radius: 0; 
+                    .home__notices__row__item { font-size: @fL;
+                        > time { display: block; font-size: @fS; color: @cG3; }
+                    }
+                    .home__notices__row__btn { padding: 5px 15px; color: #FFFFFF; white-space: nowrap; background: @c1; border-radius: 99em; 
+                        i { margin-left: 5px; }
+                    }
+                }
+                .home__notices__list__row:last-child { margin-bottom: 0; border-bottom: 0; }
+            }
+        }
+        .home__payments { position: relative;
+            .payments__add { width: fit-content; height: 40px; padding: 5px 8px; margin: 0 0 0 auto; display: flex; align-items: center; justify-content: center; color: #FFFFFF; white-space: nowrap; border-radius: 99px; background-color: @c1;
+                img { width: 24px; }
+                b { font-weight: normal; margin: 0 5px; }
+            }
+
+            .home__payments__list { width: 100%; margin: 10px auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+                .home__payments__list__column { position: relative; display: grid; justify-self: stretch; 
+                    padding: 10px; border-radius: 15px 15px 5px 15px; background: #FFFFFF;
+                    
+                    .payments-icons { margin-bottom: 12px;
+                        span:not(.spacer-line) { background: @cG6; }
+                    }
+                    .home__payments__list--state { font-size: @fS; color: @cG3; }
+                    .home__payments__list--state.review { color: @c1; }
+                    .home__payments__list--state.needadd { color: @cRed; }
+                    .home__payments__list__btn { width: 100%; display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; font-size: @fM; text-align: left; background: none; border: none; 
+                        i { margin: 3px 0 0 3px; color: @cG4; }
+                    }
+                }
+                .home__payments__list__column.credit-card { grid-column-start: 1; grid-column-end: 3; }
+                .home__payments__list__column.notice { border: 2px solid @cRed; }
+                .home__payments__list__column.notice::after { content: ''; display: block; position: absolute; 
+                    width: 18px; height: 18px; right: 10px; top: 10px; 
+                    background: url('@/assets/icons/triangle-exclamation.svg') no-repeat center; background-size: contain;
+                }
+                .home__payments__list__column.notice .home__payments__list__btn i { color: @cRed; }
+            }
+        }
+    }
+    .home__main { width: 100%; 
+        .home__stores { width: 100%; margin-bottom: 20px; 
+            .home__title {  display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; white-space: nowrap;
+                .home__title__search { display: flex; flex-flow: nowrap; align-items: center; padding: 5px; border-bottom: 1px solid @cG4;
+                    input { max-width: 160px; }
+                    button { background: none; border: none; }
+                    i { color: @c2; }
+                }
+            }
+
+            .home__stores__list {
+                .home__stores__list__row { margin: 10px 0; padding: 5px 0 10px 0; border-bottom: 1px solid @cG4;
+                    display: flex; flex-flow: wrap; align-items: center; justify-content: space-between; gap: 10px; border-radius: 0;
+                    @media screen and (min-width: 821px) { flex-flow: nowrap; }
+
+                    .home__stores__list__name { width: 100%; max-width: 220px; font-size: @fL; }
+                    .payments-icons { flex-flow: wrap;
+                        @media screen and (min-width: @sT) { width: calc(100% - 220px); flex-flow: nowrap; }
+                        span:not(.spacer-line) { filter: grayscale(1); -webkit-filter: grayscale(1); opacity: 0.5; }
+                        span.open { filter: grayscale(0); -webkit-filter: grayscale(0); opacity: 1; }
+                    }
+                }
+                .home__stores__list__row:last-child { margin-bottom: 0; border-bottom: 0; }
+            }
+        }
+    }
+    .home__none { position: relative; padding: 10px; text-align: center; color: @cG4; font-size: @fL;
+        i.icon { display: block; margin: 0 auto; }
+        i.icon.arrow-to { position: absolute; right: 10px; bottom: 0; }
+    }
+}
+
+/* popup 是否繼續申請 */
+.pop--continue-to-apply .pop__body { overflow: inherit; 
+    .pop__content { color: @cG1; text-align: center; font-weight: 500;
+        .fs-red { color: @cRed; font-size: @fM; font-weight: normal; }
+    }
+}
