@@ -5,6 +5,8 @@
                 <img src="@/assets/icons/arrow-l.svg"></a>
             <a class="header__menu" onclick="">
                 <img src="@/assets/icons/menu.svg"></a>
+            <a class="header__home" href="./home">
+                <img src="@/assets/icons/home-w.svg"></a>
             <a class="header__logo" href="./home">
                 <img src="@/assets/icons/favicon-w.svg"></a>
         </div>
@@ -16,7 +18,7 @@
             <img class="profile__img" src="@/assets/imgs/la-fresh.png">
         </a>
 
-        <section class="pop pop--nobg pop--top" >
+        <section class="pop pop--nobg pop--top" style="display: flex;">
             <div class="pop__body">
                 <div class="current-company">
                     <span class="current-company__logo"><img src="@/assets/imgs/la-fresh.png"></span>

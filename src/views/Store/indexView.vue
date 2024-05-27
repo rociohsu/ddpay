@@ -4,7 +4,23 @@ import "./style.less";
 
 <template>
     <main class="store">
-        <h1><b>鬍鬚張南門店</b><i class="fa-solid fa-store fa-xl"></i></h1>
+        <button class="store-select">
+            <b>鬍鬚張中正店</b><i class="fa-solid fa-caret-down"></i>
+        </button>
+
+        <div class="store-mainmenu">
+            <a href="/inquire">
+                <span class="store-mainmenu__name">交易查詢</span>
+                <span class="store-mainmenu__icon"><i class="card-search"></i></span>
+            </a>
+
+            <a href="#">
+                <span class="store-mainmenu__name">營業日報表</span>
+                <span class="store-mainmenu__icon"><i class="clipboard-list"></i></span>
+            </a>
+        </div>
+
+        <h1><b>鬍鬚張中正店</b><i class="fa-solid fa-store fa-xl"></i></h1>
         <h2>收款方式</h2>
 
         <div class="payment-way">
@@ -115,6 +131,32 @@ import "./style.less";
 				<div class="pop__actions">
 					<button class="pop__action pop__action--minor">取消</button>
 					<button class="pop__action">儲存</button>
+				</div>
+			</div>
+		</section>
+
+        <section class="pop pop--full pop--select" style="display: flex;">
+			<div class="pop__body">
+				<a class="pop__close"><i class="fa-solid fa-xmark fa-lg"></i></a>
+				<span class="pop__title">選擇分店</span>
+
+                <div class="store__radio-list">
+					<div class="store__radio-list__group">
+						<div class="store__radio-list__option">
+							<input type="radio" id="radio1" name="radio" checked>
+							<label for="radio1">鬍鬚張中正店</label>
+						</div>
+
+						<div class="store__radio-list__option">
+							<input type="radio" id="radio2" name="radio">
+							<label for="radio2">鬍鬚張中山店</label>
+						</div>
+
+						<div class="store__radio-list__option">
+							<input type="radio" id="radio3" name="radio">
+							<label for="radio3">鬍鬚張中原店</label>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

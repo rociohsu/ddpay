@@ -1,0 +1,246 @@
+<script setup lang="ts">
+import "./style.less";
+</script>
+
+<template>
+	<main class="inquire">
+		<div class="search-select">
+			<div class="searchbar">
+				<input type="text" placeholder="搜尋">
+				<button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+			</div>
+
+			<button class="item-select">
+				<b>項目</b>
+				<i class="fa-solid fa-caret-down"></i>
+			</button>
+		</div>
+
+		<div class="filter">
+			<button class="item-select">
+				<b>狀態</b>
+				<i class="fa-solid fa-caret-down"></i>
+			</button>
+
+			<button class="item-select">
+				<b>付款</b>
+				<i class="fa-solid fa-caret-down"></i>
+			</button>
+
+			<button class="item-select">
+				<b>日期</b>
+				<i class="fa-regular fa-calendar"></i>
+			</button>
+		</div>
+
+		<div class="inquire-list">
+			<div class="inquire-list__date">2024/8/15</div>
+			<a class="inquire-list__row" href="#">
+				<div class="payments-icons">
+					<span><img src="@/assets/icons/linepay.svg" alt="Line Pay"></span>
+				</div>
+				<div class="inquire-list__detail">
+					<div class="inquire-list__name">LINE Pay</div>
+					<time>2024/8/15 6:20:33</time>
+					<div>AS1234567890</div>
+				</div>
+				<div class="inquire-list__amount">
+					<span>$300</span>
+				</div>
+				<div class="inquire-list__action">
+					<i class="fa-solid fa-angle-right fa-xl"></i>
+				</div>
+			</a>
+
+			<a class="inquire-list__row" href="#">
+				<div class="payments-icons">
+					<span><img src="@/assets/icons/creditcard.svg" alt="信用卡"></span>
+				</div>
+				<div class="inquire-list__detail">
+					<div class="inquire-list__name">信用卡 **** 5678</div>
+					<time>2024/8/15 6:20:33</time>
+					<div>AS1234567890</div>
+				</div>
+				<div class="inquire-list__amount--fail">
+					<span><del>$300</del></span>
+					<span class="note">失敗原因</span>
+				</div>
+				<div class="inquire-list__action">
+					<i class="fa-solid fa-angle-right fa-xl"></i>
+				</div>
+			</a>
+
+			<a class="inquire-list__row" href="#">
+				<div class="payments-icons">
+					<span><img src="@/assets/icons/mastercard.svg" alt="mastercard"></span>
+				</div>
+				<div class="inquire-list__detail">
+					<div class="inquire-list__name">信用卡 **** 5678</div>
+					<time>2024/8/15 6:20:33</time>
+					<div>AS1234567890</div>
+				</div>
+				<div class="inquire-list__amount">
+					<span>$300</span>
+				</div>
+				<div class="inquire-list__action">
+					<i class="fa-solid fa-angle-right fa-xl"></i>
+				</div>
+			</a>
+		</div>
+
+		<div class="inquire-list">
+			<div class="inquire-list__date">2024/8/14</div>
+			<a class="inquire-list__row" href="#">
+				<div class="payments-icons">
+					<span><img src="@/assets/icons/jcb.svg" alt="JCB"></span>
+				</div>
+				<div class="inquire-list__detail">
+					<div class="inquire-list__name">信用卡 **** 5678</div>
+					<time>2024/8/15 6:20:33</time>
+					<div>AS1234567890</div>
+				</div>
+				<div class="inquire-list__amount">
+					<span>$300</span>
+				</div>
+				<div class="inquire-list__action">
+					<i class="fa-solid fa-angle-right fa-xl"></i>
+				</div>
+			</a>
+
+			<a class="inquire-list__row" href="#">
+				<div class="payments-icons">
+					<span><img src="@/assets/icons/jkopay.svg" alt="街口支付"></span>
+				</div>
+				<div class="inquire-list__detail">
+					<div class="inquire-list__name">街口支付</div>
+					<time>2024/8/15 6:20:33</time>
+					<div>AS1234567890</div>
+				</div>
+				<div class="inquire-list__amount--fail">
+					<span><del>$300</del></span>
+					<span class="note">已退款</span>
+				</div>
+				<div class="inquire-list__action">
+					<i class="fa-solid fa-angle-right fa-xl"></i>
+				</div>
+			</a>
+
+			<a class="inquire-list__row" href="#">
+				<div class="payments-icons">
+					<span><img src="@/assets/icons/visa.svg" alt="VISA"></span>
+				</div>
+				<div class="inquire-list__detail">
+					<div class="inquire-list__name">信用卡 **** 5678</div>
+					<time>2024/8/15 6:20:33</time>
+					<div>AS1234567890</div>
+				</div>
+				<div class="inquire-list__amount">
+					<span>$300</span>
+				</div>
+				<div class="inquire-list__action">
+					<i class="fa-solid fa-angle-right fa-xl"></i>
+				</div>
+			</a>
+		</div>
+
+		<section class="pop pop--full pop--select" style="display: flex;">
+			<div class="pop__body">
+				<a class="pop__close"><i class="fa-solid fa-xmark fa-lg"></i></a>
+				<span class="pop__title">搜尋項目</span>
+
+                <div class="inquire__radio-list">
+					<div class="inquire__radio-list__group">
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio1" name="radio" checked>
+							<label for="radio1">全部</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio2" name="radio">
+							<label for="radio2">金額</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio3" name="radio">
+							<label for="radio3">訂單編號</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pop pop--full pop--select" style="display: flex;">
+			<div class="pop__body">
+				<a class="pop__close"><i class="fa-solid fa-xmark fa-lg"></i></a>
+				<span class="pop__title">訂單狀態</span>
+
+                <div class="inquire__radio-list">
+					<div class="inquire__radio-list__group">
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio4" name="radio" checked>
+							<label for="radio4">全部</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio5" name="radio">
+							<label for="radio5">收款成功</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio6" name="radio">
+							<label for="radio6">收款失敗</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio7" name="radio">
+							<label for="radio7">已退款</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pop pop--full pop--select" style="display: flex;">
+			<div class="pop__body">
+				<a class="pop__close"><i class="fa-solid fa-xmark fa-lg"></i></a>
+				<span class="pop__title">付款方式</span>
+
+                <div class="inquire__radio-list">
+					<div class="inquire__radio-list__group">
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio8" name="radio" checked>
+							<label for="radio8">全部</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio9" name="radio">
+							<label for="radio9">信用卡</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio10" name="radio">
+							<label for="radio10">LINE Pay</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio11" name="radio">
+							<label for="radio11">街口支付</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio12" name="radio">
+							<label for="radio12">icashPay</label>
+						</div>
+
+						<div class="inquire__radio-list__option">
+							<input type="radio" id="radio13" name="radio">
+							<label for="radio13">全支付</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    
+		<RouterView />
+	</main>
+</template>
