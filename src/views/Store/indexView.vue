@@ -144,17 +144,26 @@ import "./style.less";
 					<div class="store__radio-list__group">
 						<div class="store__radio-list__option">
 							<input type="radio" id="radio1" name="radio" checked>
-							<label for="radio1">鬍鬚張中正店</label>
+							<label for="radio1">
+                                <span>鬍鬚張中正店</span>
+                                <span>P_4Jk02DA4I</span>
+                            </label>
 						</div>
 
 						<div class="store__radio-list__option">
 							<input type="radio" id="radio2" name="radio">
-							<label for="radio2">鬍鬚張中山店</label>
+							<label for="radio2">
+                                <span>鬍鬚張中山店</span>
+                                <span>P_4Jk02DA4I</span>
+                            </label>
 						</div>
 
 						<div class="store__radio-list__option">
 							<input type="radio" id="radio3" name="radio">
-							<label for="radio3">鬍鬚張中原店</label>
+							<label for="radio3">
+                                <span>鬍鬚張中原店</span>
+                                <span>P_4Jk02DA4I</span>
+                            </label>
 						</div>
 					</div>
 				</div>

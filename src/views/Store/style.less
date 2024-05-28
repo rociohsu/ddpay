@@ -63,10 +63,13 @@
         .pop__body { padding: 0 20px; background: @c2; }
         .pop__close { top: 15px; background: @c2; }
         .pop__title { position: sticky; width: 100%; top: 0; left: 0; padding: 15px 0; text-align: left; color: #FFFFFF; font-weight: normal; background: @c2; z-index: 0; }
-        .store__radio-list { width: 80%; margin: -20px auto 20px auto;
+        .store__radio-list { width: 100%; margin: -20px auto 20px auto;
             .store__radio-list__group { flex-flow: column; gap: 0; padding: 0;
                 .store__radio-list__option { 
-                    label { color: #FFFFFF; border-radius: none; border: none; opacity: 0.5; }
+                    label { padding: 10px 0; display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center;
+                        > span { color: #FFFFFF; }
+                        border-radius: none; border: none; opacity: 0.5;
+                    }
                     input:checked + label { font-weight: 600; opacity: 1; }
                 }
             }
