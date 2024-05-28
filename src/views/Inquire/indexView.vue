@@ -35,7 +35,7 @@ import "./style.less";
 
 		<div class="inquire-list">
 			<div class="inquire-list__date">2024/8/15</div>
-			<a class="inquire-list__row" href="#">
+			<a class="inquire-list__row" href="./inquire-detail">
 				<div class="payments-icons">
 					<span><img src="@/assets/icons/linepay.svg" alt="Line Pay"></span>
 				</div>
@@ -52,7 +52,7 @@ import "./style.less";
 				</div>
 			</a>
 
-			<a class="inquire-list__row" href="#">
+			<a class="inquire-list__row" href="./inquire-detail">
 				<div class="payments-icons">
 					<span><img src="@/assets/icons/creditcard.svg" alt="信用卡"></span>
 				</div>
@@ -70,7 +70,7 @@ import "./style.less";
 				</div>
 			</a>
 
-			<a class="inquire-list__row" href="#">
+			<a class="inquire-list__row" href="./inquire-detail">
 				<div class="payments-icons">
 					<span><img src="@/assets/icons/mastercard.svg" alt="mastercard"></span>
 				</div>
@@ -90,7 +90,7 @@ import "./style.less";
 
 		<div class="inquire-list">
 			<div class="inquire-list__date">2024/8/14</div>
-			<a class="inquire-list__row" href="#">
+			<a class="inquire-list__row" href="./inquire-detail">
 				<div class="payments-icons">
 					<span><img src="@/assets/icons/jcb.svg" alt="JCB"></span>
 				</div>
@@ -107,7 +107,7 @@ import "./style.less";
 				</div>
 			</a>
 
-			<a class="inquire-list__row" href="#">
+			<a class="inquire-list__row" href="./inquire-detail">
 				<div class="payments-icons">
 					<span><img src="@/assets/icons/jkopay.svg" alt="街口支付"></span>
 				</div>
@@ -125,7 +125,7 @@ import "./style.less";
 				</div>
 			</a>
 
-			<a class="inquire-list__row" href="#">
+			<a class="inquire-list__row" href="./inquire-detail">
 				<div class="payments-icons">
 					<span><img src="@/assets/icons/visa.svg" alt="VISA"></span>
 				</div>

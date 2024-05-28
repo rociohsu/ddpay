@@ -5,7 +5,7 @@
 @import "@fortawesome/fontawesome-free/less/solid.less";
 
 /* popup 共用設定 */
-.pop { width: 100%; height: 100%; padding: 10px; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); display: none; align-items: flex-end; justify-content: center; z-index: 8;
+.pop { width: 100%; height: 100%; padding: 10px; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); display: nones; align-items: flex-end; justify-content: center; z-index: 8;
     &.pop--nobg { background-color: rgba(0, 0, 0, 0); }
     &.pop--full { padding: 70px 0 0;
         .pop__body { border-radius: 20px 20px 0 0; }}
@@ -31,6 +31,7 @@
         .pop__actions { width: 100%; display: flex; justify-content: space-between; align-items: flex-end; gap: 10px; }
         .pop__action { width: 100%; height: 50px; padding: 0 20px; border-radius: 30px; gap: 10px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: @fL; background-color: @c1; }
         .pop__action--green { background-color: @c2; }
+        .pop__action--red { background-color: @cRed; }
         .pop__action--minor { color: @cG2; background-color: @cBg; }
     }
 }
