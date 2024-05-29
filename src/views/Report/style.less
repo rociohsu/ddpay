@@ -1,0 +1,37 @@
+@import "@/styles/variable.less";
+@import "../Inquire/style.less";
+
+.report { width: 100%; max-width: 500px; padding: 20px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 20px;
+    .item-select { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center;
+        width: 100%; padding: 7px 15px; background: @cBg; border-radius: 10px;
+        b { font-weight: normal; }
+    }
+    .item-select.date b { color: @c2; }
+    .calendar { display: inline-block; width: 16px; height: 16px; 
+        background: url('@/assets/icons/calendar.svg') no-repeat center; background-size: contain; }
+
+    .report-page { padding: 20px 15px; background: @cBg; border-radius: 10px; 
+        h2 { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: flex-end; 
+            margin: 0; color: #000000;
+
+            > b { font-size: @fL; font-weight: bold; }
+            > span { font-size: @fXXXL; font-weight: normal; text-align: right; }
+        }
+
+        hr { height: 20px; border: none; 
+            background: url('@/assets/imgs/line.svg') repeat-x center; background-size: contain; 
+        }
+    
+        .report-list { display: grid; grid-template-columns: 70% 30%; justify-content: space-between; align-items: center; 
+            padding: 7px 0;
+
+            .report-list__icon { display: inline-flex; flex-flow: nowrap; align-items: center; font-size: @fL;
+                .payments-icons { width: fit-content; margin-right: 7px;
+                    > span { background: #FFFFFF; }
+                }
+            }
+            .report-list__price { font-size: @fL; text-align: right; }
+        }
+    }
+
+}

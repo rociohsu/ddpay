@@ -46,6 +46,11 @@ const router = createRouter({
           name: "inquire-detail",
           component: () => import("../views/InquireDetail/indexView.vue"),
         },
+        {
+          path: "/report",
+          name: "report",
+          component: () => import("../views/Report/indexView.vue"),
+        },
       ],
     },
   ],
