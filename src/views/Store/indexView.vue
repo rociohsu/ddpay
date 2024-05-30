@@ -4,6 +4,14 @@ import "./style.less";
 
 <template>
     <main class="store">
+        <div class="nodata">
+            <div class="nodata__icon">
+                <img src="../../assets/icons/shop-linear-null.svg">
+            </div>
+            <h2>暫無可使用商店</h2>
+            <p>如有疑問請聯繫客服</p>
+        </div>
+
         <button class="store-select">
             <b>鬍鬚張中正店</b><i class="fa-solid fa-caret-down"></i>
         </button>
@@ -145,7 +153,7 @@ import "./style.less";
 						<div class="store__radio-list__option">
 							<input type="radio" id="radio1" name="radio" checked>
 							<label for="radio1">
-                                <span>鬍鬚張中正店</span>
+                                <span>鬍鬚張中正店鬍鬚張中正店鬍鬚張中正店鬍鬚張中正店</span>
                                 <span>P_4Jk02DA4I</span>
                             </label>
 						</div>

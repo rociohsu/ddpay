@@ -18,12 +18,12 @@ import "./style.less";
 
 		<div class="filter">
 			<button class="item-select">
-				<b>狀態</b>
+				<b>訂單狀態</b>
 				<i class="fa-solid fa-caret-down"></i>
 			</button>
 
 			<button class="item-select">
-				<b>付款</b>
+				<b>收款方式</b>
 				<i class="fa-solid fa-caret-down"></i>
 			</button>
 
@@ -37,12 +37,30 @@ import "./style.less";
 			<div class="inquire-list__date">2024/8/15</div>
 			<a class="inquire-list__row" href="./inquire-detail">
 				<div class="payments-icons">
+					<span><img src="@/assets/icons/pending.svg" alt="未收款"></span>
+				</div>
+				<div class="inquire-list__detail">
+					<div class="inquire-list__name">未收款</div>
+					<div>交易編號 AS1234567890</div>
+					<div>快一點 <time>2024/8/15 6:20:33</time></div>
+				</div>
+				<div class="inquire-list__amount--pending">
+					<span>$300</span>
+					<span class="note">未收款</span>
+				</div>
+				<div class="inquire-list__action">
+					<i class="fa-solid fa-angle-right fa-xl"></i>
+				</div>
+			</a>
+
+			<a class="inquire-list__row" href="./inquire-detail">
+				<div class="payments-icons">
 					<span><img src="@/assets/icons/linepay.svg" alt="Line Pay"></span>
 				</div>
 				<div class="inquire-list__detail">
 					<div class="inquire-list__name">LINE Pay</div>
-					<time>2024/8/15 6:20:33</time>
-					<div>AS1234567890</div>
+					<div>交易編號 AS1234567890</div>
+					<div>快一點 <time>2024/8/15 6:20:33</time></div>
 				</div>
 				<div class="inquire-list__amount">
 					<span>$300</span>
@@ -58,8 +76,8 @@ import "./style.less";
 				</div>
 				<div class="inquire-list__detail">
 					<div class="inquire-list__name">信用卡 **** 5678</div>
-					<time>2024/8/15 6:20:33</time>
-					<div>AS1234567890</div>
+					<div>交易編號 AS1234567890</div>
+					<div>快一點 <time>2024/8/15 6:20:33</time></div>
 				</div>
 				<div class="inquire-list__amount--fail">
 					<span><del>$300</del></span>
@@ -76,8 +94,8 @@ import "./style.less";
 				</div>
 				<div class="inquire-list__detail">
 					<div class="inquire-list__name">信用卡 **** 5678</div>
-					<time>2024/8/15 6:20:33</time>
-					<div>AS1234567890</div>
+					<div>交易編號 AS1234567890</div>
+					<div>快一點 <time>2024/8/15 6:20:33</time></div>
 				</div>
 				<div class="inquire-list__amount">
 					<span>$300</span>
@@ -96,8 +114,8 @@ import "./style.less";
 				</div>
 				<div class="inquire-list__detail">
 					<div class="inquire-list__name">信用卡 **** 5678</div>
-					<time>2024/8/15 6:20:33</time>
-					<div>AS1234567890</div>
+					<div>交易編號 AS1234567890</div>
+					<div>快一點 <time>2024/8/15 6:20:33</time></div>
 				</div>
 				<div class="inquire-list__amount">
 					<span>$300</span>
@@ -113,8 +131,8 @@ import "./style.less";
 				</div>
 				<div class="inquire-list__detail">
 					<div class="inquire-list__name">街口支付</div>
-					<time>2024/8/15 6:20:33</time>
-					<div>AS1234567890</div>
+					<div>交易編號 AS1234567890</div>
+					<div>快一點 <time>2024/8/15 6:20:33</time></div>
 				</div>
 				<div class="inquire-list__amount--fail">
 					<span><del>$300</del></span>
@@ -131,8 +149,8 @@ import "./style.less";
 				</div>
 				<div class="inquire-list__detail">
 					<div class="inquire-list__name">信用卡 **** 5678</div>
-					<time>2024/8/15 6:20:33</time>
-					<div>AS1234567890</div>
+					<div>交易編號 AS1234567890</div>
+					<div>快一點 <time>2024/8/15 6:20:33</time></div>
 				</div>
 				<div class="inquire-list__amount">
 					<span>$300</span>

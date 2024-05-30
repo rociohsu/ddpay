@@ -90,6 +90,33 @@ import "./style.less";
 			</div>
 		</div>
 
+		<div class="inquire-page">
+			<div class="pop__icons">
+				<div class="pop__icon pop__icon--orange">
+					<i class="fa-solid fa-hourglass-half fa-xl"></i>
+				</div>
+			</div>
+
+			<h2 class="orange">未收款</h2>
+			<h3>NT$300</h3>
+
+			<div class="inquire-list">
+				<div class="inquire-list__group">
+					<span>商家訂單編號</span>
+					<span>87654321</span>
+					<span>交易編號</span>
+					<span>AS1234567890</span>
+					<span>交易時間</span>
+					<span>2022/04/30 12:25</span>
+				</div>
+
+				<div class="inquire-list__group">
+					<span>備註</span>
+					<span>買一送一買一送一</span>
+				</div>
+			</div>
+		</div>
+
 		<div class="bottom-btns">
 			<button class="cancel-btn"><i class="clipboard-remove"></i>取消訂單</button>
 			<button><i class="file-download"></i>下載簽單</button>
