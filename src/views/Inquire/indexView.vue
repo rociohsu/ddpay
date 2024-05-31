@@ -161,6 +161,16 @@ import "./style.less";
 			</a>
 		</div>
 
+		<div class="pager">
+			<a class="prev disabled"><i class="fa-solid fa-angle-left fa-lg"></i></a>
+			<a class="current" href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<span>...</span>
+			<a href="#">10</a>
+			<a class="next"><i class="fa-solid fa-angle-right fa-lg"></i></a>
+		</div>
+
 		<section class="pop pop--full pop--select" style="display: flex;">
 			<div class="pop__body">
 				<a class="pop__close"><i class="fa-solid fa-xmark fa-lg"></i></a>

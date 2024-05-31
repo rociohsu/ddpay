@@ -90,3 +90,16 @@
     > h2 { margin: 10px auto; font-size: @fXL; font-weight: normal; }
     p { color: @cG3; }
 }
+
+/* 頁碼共用元件 */
+.pager { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; 
+    > span, > a { display: inline-flex; justify-content: center; align-items: center; border-radius: 10px;
+        width: 30px; height: 30px; padding: 5px 0; color: @cG3; text-align: center; }
+    > a { text-decoration: nono; cursor: pointer; }
+    > a:not(.disabled):hover { box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
+    .prev, .next { background: @cBg; }
+    .prev { margin-right: 35px; }
+    .next { margin-left: 35px; }
+    .current { color: #FFFFFF; background: @c2; }
+    .disabled { color: @cG5; background: none; cursor: text; }
+}
