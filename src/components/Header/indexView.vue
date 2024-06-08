@@ -7,8 +7,10 @@
                 <img src="@/assets/icons/menu.svg"></a>
             <a class="header__home" href="./home">
                 <img src="@/assets/icons/home-w.svg"></a>
+            <!-- <a class="header__logo" href="./home">
+                <img src="@/assets/icons/favicon-w.svg"></a> -->
             <a class="header__logo" href="./home">
-                <img src="@/assets/icons/favicon-w.svg"></a>
+                <img src="@/assets/imgs/Hualien.svg"></a>
         </div>
         <a class="header__right" onclick="">
             <div class="profile__info">
