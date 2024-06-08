@@ -33,6 +33,13 @@ import "./style.less";
 			</button>
 		</div>
 
+		<div class="nodata">
+            <div class="nodata__icon">
+                <img src="../../assets/icons/clipboard-list-null.svg">
+            </div>
+            <h3>無交易紀錄</h3>
+        </div>
+
 		<div class="inquire-list">
 			<div class="inquire-list__date">2024/8/15</div>
 			<a class="inquire-list__row" href="./inquire-detail">

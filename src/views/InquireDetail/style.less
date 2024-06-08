@@ -13,7 +13,10 @@ body { background: @cBg; }
             .pop__icon--green { border-color: @cGreen;
                 i, svg { color: @cGreen; }}
             .pop__icon--red { border-color: @cRed;
-                i, svg { color: @cRed; }}}
+                i, svg { color: @cRed; }}
+            .pop__icon--orange { border-color: @cOrange;
+                i, svg { color: @cOrange; }}
+        }
         
         h2 { margin-top: 5px; color: @cGreen; font-size: @fXL; font-weight: normal; text-align: center; }
         h2.red { color: @cRed; }
@@ -57,7 +60,7 @@ body { background: @cBg; }
 }
 
 /* popup double confirm */
-.pop--confirm .pop__body { overflow: inherit; 
+.pop--confirm .pop__body { overflow: inherit !important; 
     .pop__content { color: @cG1; text-align: center; font-weight: 500;
         > span { color: @cG3; font-weight: normal; }
     }

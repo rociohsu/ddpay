@@ -93,7 +93,10 @@
             .pop__icon--green { border-color: @cGreen;
                 i, svg { color: @cGreen; }}
             .pop__icon--red { border-color: @cRed;
-                i, svg { color: @cRed; }}}
+                i, svg { color: @cRed; }}
+            .pop__icon--orange { border-color: @cOrange;
+                    i, svg { color: @cOrange; }}
+        }
         .pop__title { display: block; width: 100%; font-size: @fL; font-weight: bold; color: @c2; text-align: left; }
         .pop__title__fs { font-size: @fL; color: @cG3; font-weight: 500; }
         .pop__title + .pop__title__fs { margin-top: -20px; }
@@ -157,7 +160,8 @@
 /* 暫無資料共用樣式 */
 .nodata { min-height: 80dvh; display: flex; flex-flow: column; justify-content: center; align-items: center; text-align: center;
     .nodata__icon { width: 100%; max-width: 100px; margin: 0 auto; }
-    > h2 { margin: 10px auto; font-size: @fXL; font-weight: normal; }
+    > h2, > h3 { margin: 10px auto; font-size: @fXL; font-weight: normal; }
+    > h3 { color: @cG3; }
     p { color: @cG3; }
 }
 
