@@ -1,0 +1,26 @@
+@import "@/styles/main.less";
+
+.header { display: none !important; }
+.welcome {
+    header { position: relative; width: 100%; overflow: hidden;
+        .circle-bg { position: relative; width: 120%; left: -10%; top: 0; 
+            background: @c2; border-radius:  0 0 50% 50%; overflow: hidden;
+            @media screen and (min-width: @sT) { width: 100%; left: 0; }
+
+            .circle-bg__center { width: 100%; max-width: @sSE; margin: 0 auto; padding: 50px 20px 60px 20px; 
+                p { margin-bottom: 10px; color: #FFFFFF; font-size: @fXL; }
+            }
+        }
+        .header__logo { width: 150px; height: auto; 
+            > img { width: 100%; height: auto; }
+        }
+    }
+
+    .mainkv, .bottom-btns { width: 100%; max-width: @sSE; margin: 0 auto; 
+        > img { width: 100%; height: auto; }
+    }
+
+    .bottom-btns { justify-content: center; 
+        .button { font-size: @fL; }
+    }
+}
