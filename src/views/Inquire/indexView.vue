@@ -126,6 +126,7 @@ import "./style.less";
 				</div>
 				<div class="inquire-list__amount">
 					<span>$300</span>
+					<span class="point">含點數$30</span>
 				</div>
 				<div class="inquire-list__action">
 					<i class="fa-solid fa-angle-right fa-xl"></i>

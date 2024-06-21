@@ -21,8 +21,10 @@ import "./style.less";
 						<div class="payments-icons">
 							<span><img src="@/assets/icons/linepay.svg" alt="Line Pay"></span>
 						</div>
-						LINE Pay
+						LINE Pay <b>$230</b>
 					</span>
+					<span>點數</span>
+					<span>紅利桃子 60 <b>$60</b></span>
 					<span>LINE Pay交易序號</span>
 					<span>87654321</span>
 				</div>
