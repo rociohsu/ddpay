@@ -23,4 +23,31 @@
     .bottom-btns { justify-content: center; 
         .button { font-size: @fL; }
     }
+
+    .pop.pop--app { 
+        .pop__body { width: 95%; max-width: 380px; margin-bottom: 30px; border-radius: 20px !important; overflow: inherit; }
+
+        .pop__logo { display: flex; justify-content: center; align-items: center; 
+            max-width: 60px; margin: 0 auto; 
+            box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2); border-radius: 15px; overflow: hidden;
+            > img { width: 100%; height: auto; }         
+        }
+
+        .pop__title { color: @cG1; font-size: @fXL; font-weight: normal; text-align: center; }
+        .pop__content { font-size: @fM; font-weight: normal; text-align: center; }
+
+        .icon-share { display: inline-block; width: 24px; height: 20px; margin-bottom: -3px;
+            background: url(@/assets/icons/share-and-arrow-up.svg) no-repeat center bottom; background-size: contain;
+        }
+    }
+
+    .pop.pop--app.pop--ios {
+        .pop__body::after { display: block; position: absolute; content: ''; 
+            width: 0px; height: 0px; left: 0; right: 0; bottom: -8px; margin: 0 auto;
+            border-style: solid;
+            border-width: 0 8px 13.9px 8px;
+            border-color: transparent transparent #FFFFFF transparent;
+            transform: rotate(60deg);
+        }
+    }
 }
