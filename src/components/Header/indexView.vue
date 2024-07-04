@@ -43,6 +43,11 @@
                         <span class="other-list__item__name add">新增公司</span>
                     </a>
 
+                    <a class="other-list__item" href="./manage">
+                        <span class="other-list__item__logo"><i class="fa-solid fa-users-gear"></i></span>
+                        <span class="other-list__item__name add">權限設定</span>
+                    </a>
+
                     <a class="other-list__item">
                         <span class="other-list__item__logo"><i class="fa-solid fa-right-from-bracket"></i></span>
                         <span class="other-list__item__name logout">登出</span>
