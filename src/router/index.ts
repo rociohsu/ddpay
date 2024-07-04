@@ -56,6 +56,11 @@ const router = createRouter({
           name: "welcome",
           component: () => import("../views/Welcome/indexView.vue"),
         },
+        {
+          path: "/manage",
+          name: "manage",
+          component: () => import("../views/Manage/indexView.vue"),
+        },
       ],
     },
   ],
