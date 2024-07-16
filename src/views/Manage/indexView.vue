@@ -19,7 +19,9 @@ import "./style.less";
 
         <div class="admin-list">
             <a>
-                <span class="admin-list__name">陳小明</span> 
+                <span class="admin-list__name">陳小明
+                    <span class="admin-list__stores">中正店・中山店・中華店</span>
+                </span> 
                 <span class="admin-list__role">老闆</span>
                 <span class="admin-list__action">
                     <i class="fa-regular fa-angle-right fa-lg"></i>
@@ -27,7 +29,9 @@ import "./style.less";
             </a>
 
             <a>
-                <span class="admin-list__name">汪喵</span> 
+                <span class="admin-list__name">汪喵
+                    <span class="admin-list__stores">中正店・中山店・中華店</span>
+                </span> 
                 <span class="admin-list__role">員工</span>
                 <span class="admin-list__action">
                     <i class="fa-regular fa-angle-right fa-lg"></i>
@@ -35,7 +39,9 @@ import "./style.less";
             </a>
 
             <a>
-                <span class="admin-list__name">林姍姍</span> 
+                <span class="admin-list__name">林姍姍
+                    <span class="admin-list__stores">中正店・中山店・中華店</span>
+                </span> 
                 <span class="admin-list__role">員工</span>
                 <span class="admin-list__action">
                     <i class="fa-regular fa-angle-right fa-lg"></i>
@@ -53,10 +59,18 @@ import "./style.less";
 				<span class="pop__title">編輯管理員</span>
 				<span class="pop__content">
                     <div class="admin__input">
-                        <span class="title">名稱</span>
+                        <span class="title">管理員名稱</span>
                         <div class="input">
                             <input type="text" placeholder="輸入名稱" value="陳大明">
                         </div>
+                    </div>
+
+                    <div class="admin__input">
+                        <span class="title">授權分店</span>
+                        <button class="select">
+                            <span>中正店・中山店</span>
+                            <i class="fa-solid fa-angle-down fa-lg"></i>
+                        </button>
                     </div>
 
                     <div class="admin-group">
@@ -168,10 +182,18 @@ import "./style.less";
 				<span class="pop__title">新增管理員</span>
 				<span class="pop__content">
                     <div class="admin__input">
-                        <span class="title">名稱</span>
+                        <span class="title">管理員名稱</span>
                         <div class="input">
                             <input type="text" placeholder="輸入名稱" value="陳大明">
                         </div>
+                    </div>
+
+                    <div class="admin__input">
+                        <span class="title">授權分店</span>
+                        <button class="select">
+                            <span>中正店・中山店</span>
+                            <i class="fa-solid fa-angle-down fa-lg"></i>
+                        </button>
                     </div>
 
                     <div class="admin-group">
@@ -229,6 +251,35 @@ import "./style.less";
                     <button class="pop__action pop__action--minor disabled"><i class="icon-line"></i>LINE分享</button>
 					<button class="pop__action pop__action--green disabled"><i class="fa-solid fa-copy"></i>複製連結</button>
 				</div>
+			</div>
+		</section>
+
+        <section class="pop pop--full pop--select" style="display: flex;">
+			<div class="pop__body">
+				<a class="pop__close"><i class="fa-solid fa-xmark fa-lg"></i></a>
+				<span class="pop__title">授權分店</span>
+				<div class="store__check-list">
+					<div class="store__check-list__group">
+						<div class="store__check-list__option">
+							<input type="checkbox" id="checkbox1" name="checkbox" checked>
+							<label for="checkbox1"><i class="fa-solid fa-check"></i>中正店</label>
+						</div>
+
+						<div class="store__check-list__option">
+							<input type="checkbox" id="checkbox2" name="checkbox" checked>
+							<label for="checkbox2"><i class="fa-solid fa-check"></i>中山店</label>
+						</div>
+
+						<div class="store__check-list__option">
+							<input type="checkbox" id="checkbox3" name="checkbox">
+							<label for="checkbox3"><i class="fa-solid fa-check"></i>中華店</label>
+						</div>
+					</div>
+				</div>
+
+                <div class="pop__actions">
+                    <button class="pop__action pop__action--white full">確認</button>
+                </div>
 			</div>
 		</section>
 
