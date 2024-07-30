@@ -26,6 +26,11 @@ import "./style.less";
                 <span class="store-mainmenu__name">營業日報表</span>
                 <span class="store-mainmenu__icon"><i class="clipboard-list"></i></span>
             </a>
+
+            <a href="#">
+                <span class="store-mainmenu__name">對帳報表匯出</span>
+                <span class="store-mainmenu__icon"><i class="notes-linear"></i></span>
+            </a>
         </div>
 
         <h1><b>鬍鬚張中正店</b><i class="fa-solid fa-store fa-xl"></i></h1>
