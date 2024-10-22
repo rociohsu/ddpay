@@ -1024,7 +1024,7 @@ import "./style.less";
 			</div>
 
 			<div class="bottom-btns">
-				<a class="button" href="/home">回首頁</a>
+				<a class="button" href="/home">回首頁回首頁回首頁回首頁回首頁回首頁回首頁回首頁</a>
 			</div>
 		</div>
 
