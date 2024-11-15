@@ -1,6 +1,12 @@
 @import "@/styles/main.less";
 
 .inquire { width: 100%; max-width: 500px; padding: 20px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 20px;
+    .store-select { width: 100%; display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; gap: 5px;
+        padding: 7px 15px; background: @cBg; border-radius: 10px;
+        b { font-weight: normal; font-size: @fM; text-align: left; }
+        i { color: @c2; }
+    }
+
     .search-select { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; gap: 5px;
         padding: 5px 5px 5px 10px; background: @cBg; border-radius: 10px;
 
@@ -17,7 +23,7 @@
         i { width: 20px; color: @c2; }
     }
 
-    .filter { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; margin-top: -10px;
+    .filter { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center;
         .item-select { width: 32%; background: @cBg; 
             b { font-weight: normal; }
         }

@@ -4,10 +4,12 @@ import "./style.less";
 
 <template>
 	<main class="report">
-		<button class="item-select date">
-			<b>8/15-8/16</b>
-			<i class="calendar"></i>
-		</button>
+		<div class="filter-sticky">
+			<button class="item-select date">
+				<b>8/15-8/16</b>
+				<i class="calendar"></i>
+			</button>
+		</div>
 
 		<div class="report-page">
 			<h2>
