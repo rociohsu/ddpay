@@ -4,24 +4,24 @@
 .welcome {
     header { position: relative; width: 100%; overflow: hidden;
         .circle-bg { position: relative; width: 120%; left: -10%; top: 0; 
-            background: @c2; border-radius:  0 0 50% 50%; overflow: hidden;
-            @media screen and (min-width: @sT) { width: 100%; left: 0; }
+            background: var(--c2); border-radius:  0 0 50% 50%; overflow: hidden;
+            @media screen and (min-width: var(--sT)) { width: 100%; left: 0; }
 
-            .circle-bg__center { width: 100%; max-width: @sSE; margin: 0 auto; padding: 50px 20px 60px 20px; 
-                p { margin-bottom: 10px; color: #FFFFFF; font-size: @fXL; }
+            .circle-bg__center { width: 100%; max-width: var(--sSE); margin: 0 auto; padding: 50px 20px 60px 20px; text-align: center;
+                p { margin-bottom: 10px; color: #FFFFFF; font-size: var(--fXL); }
             }
         }
-        .header__logo { width: 150px; height: auto; 
+        .header__logo { width: 150px; height: auto; margin: 0 auto;
             > img { width: 100%; height: auto; }
         }
     }
 
-    .mainkv, .bottom-btns { width: 100%; max-width: @sSE; margin: 0 auto; 
+    .mainkv, .bottom-btns { width: 100%; max-width: var(--sSE); margin: 0 auto; 
         > img { width: 100%; height: auto; }
     }
 
     .bottom-btns { justify-content: center; 
-        .button { font-size: @fL; }
+        .button { font-size: var(--fL); }
     }
 
     .pop.pop--app { 
@@ -33,8 +33,8 @@
             > img { width: 100%; height: auto; }         
         }
 
-        .pop__title { color: @cG1; font-size: @fXL; font-weight: normal; text-align: center; }
-        .pop__content { font-size: @fM; font-weight: normal; text-align: center; }
+        .pop__title { color: var(--cG1); font-size: var(--fXL); font-weight: normal; text-align: center; }
+        .pop__content { font-size: var(--fM); font-weight: normal; text-align: center; }
 
         .icon-share { display: inline-block; width: 24px; height: 20px; margin-bottom: -3px;
             background: url(@/assets/icons/share-and-arrow-up.svg) no-repeat center bottom; background-size: contain;

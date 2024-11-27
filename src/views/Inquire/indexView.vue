@@ -383,24 +383,24 @@ import "./style.less";
                 <div class="store__radio-list">
 					<div class="store__radio-list__group">
 						<div class="store__radio-list__option">
-							<input type="radio" id="radio1" name="radio" checked>
-							<label for="radio1">
+							<input type="radio" id="store1" name="store" checked>
+							<label for="store1">
                                 <span>鬍鬚張中正店鬍鬚張中正店鬍鬚張中正店鬍鬚張中正店</span>
                                 <span>P_4Jk02DA4I</span>
                             </label>
 						</div>
 
 						<div class="store__radio-list__option">
-							<input type="radio" id="radio2" name="radio">
-							<label for="radio2">
+							<input type="radio" id="store2" name="store">
+							<label for="store2">
                                 <span>鬍鬚張中山店</span>
                                 <span>P_4Jk02DA4I</span>
                             </label>
 						</div>
 
 						<div class="store__radio-list__option">
-							<input type="radio" id="radio3" name="radio">
-							<label for="radio3">
+							<input type="radio" id="store3" name="store">
+							<label for="store3">
                                 <span>鬍鬚張中原店</span>
                                 <span>P_4Jk02DA4I</span>
                             </label>

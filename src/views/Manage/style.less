@@ -2,30 +2,30 @@
 
 .header:not(.inside) { display: none !important; }
 .header.inside { background: #FFFFFF;
-    .header__left i { color: @c2; }
-    .header__right { display: block; width: 100%; font-size: @fL; text-align: center; }
+    .header__left i { color: var(--c2); }
+    .header__right { display: block; width: 100%; font-size: var(--fL); text-align: center; }
 }
 
 .manage { width: 100%; max-width: 500px; padding: 20px 20px 80px 20px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 20px;
 
     .searchbar { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center;
-        width: 100%; padding: 7px 10px; border: 1px solid @cG5; border-radius: 10px;
+        width: 100%; padding: 7px 10px; border: 1px solid var(--cG5); border-radius: 10px;
         input { width: calc(100% - 30px); }
-        button { width: 30px; color: @c2; background: none; }
+        button { width: 30px; color: var(--c2); background: none; }
     }
 
     .bottom-btns { position: fixed; width: 100%; max-width: 500px; left: 0; right: 0; bottom: 0; margin: 0 auto; padding: 10px; justify-content: center; background: #FFFFFF;
-        .button { width: 100%; font-size: @fL; text-align: center; }
+        .button { width: 100%; font-size: var(--fL); text-align: center; }
     }
 
     .admin-list {
-        > a { display: grid; grid-template-columns: 60% 30% 10%; align-items: center; padding: 10px 0; border-bottom: 1px solid @cG5; cursor: pointer;
+        > a { display: grid; grid-template-columns: 60% 30% 10%; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--cG5); cursor: pointer;
             &:last-child { border-bottom: none; }
-            > * { font-size: @fL; }
+            > * { font-size: var(--fL); }
             > *:not(.admin-list__name) { text-align: right; }
-            .admin-list__role { color: @c2; }
-            .admin-list__action i { color: @cG4; }
-            .admin-list__stores { display: block; font-size: @fM; color: @cG3; }
+            .admin-list__role { color: var(--c2); }
+            .admin-list__action i { color: var(--cG4); }
+            .admin-list__stores { display: block; font-size: var(--fM); color: var(--cG3); }
         }
     }
 
@@ -33,35 +33,35 @@
         .admin-group__option { display: grid;
             input { display: none; }
             label { display: block; width: 100%; padding: 10px; 
-                font-size: @fL; text-align: center; border-radius: 10px; border: 2px solid @cG5; }
-            input:checked + label { border-color: @c1; }
+                font-size: var(--fL); text-align: center; border-radius: 10px; border: 2px solid var(--cG5); }
+            input:checked + label { border-color: var(--c1); }
 
-            .admin-group__option__item { margin-left: 20px; text-align: left; font-size: @fM; }
+            .admin-group__option__item { margin-left: 20px; text-align: left; font-size: var(--fM); }
         }
     }
 }
 
 .pop.pop--manage {
     .pop__body { max-width: 500px; }
-    .pop__title { color: @cG1; font-weight: normal; }
+    .pop__title { color: var(--cG1); font-weight: normal; }
     .pop__content { width: 100%; }
 
     .admin__input { position: relative; width: 100%; margin: 20px auto; display: flex; flex-flow: wrap; justify-content: space-between; align-items: center; gap: 2px;
-        .title { width: 100%; font-size: @fM; font-weight: bold; }
+        .title { width: 100%; font-size: var(--fM); font-weight: bold; }
         .input { position: relative; width: 100%; height: 44px; margin: 2px 0; display: flex; align-items: center;
-            input { width: 100%; height: 100%; padding: 0 10px; font-size: @fL; border: solid 2px @cG5; border-radius: 10px; }
-            input:focus { -webkit-text-fill-color: @c2; border-color: @c2; }
+            input { width: 100%; height: 100%; padding: 0 10px; font-size: var(--fL); border: solid 2px var(--cG5); border-radius: 10px; }
+            input:focus { -webkit-text-fill-color: var(--c2); border-color: var(--c2); }
         }
-        .select { position: relative; width: 100%; height: 44px; margin: 2px 0; display: flex; align-items: center; border: solid 2px @cG5; border-radius: 10px; padding: 0 10px; background: none;
-            i { display: flex; justify-content: center; align-items: center; position: absolute; width: 30px; height: 30px; right: 5px; top: 0; bottom: 0; margin: auto 0; pointer-events: none; color: @cG3; }
+        .select { position: relative; width: 100%; height: 44px; margin: 2px 0; display: flex; align-items: center; border: solid 2px var(--cG5); border-radius: 10px; padding: 0 10px; background: none;
+            i { display: flex; justify-content: center; align-items: center; position: absolute; width: 30px; height: 30px; right: 5px; top: 0; bottom: 0; margin: auto 0; pointer-events: none; color: var(--cG3); }
         }
     }
 
     .pop__actions { display: flex; flex-flow: wrap; justify-content: space-between; align-items: center;
         > * { width: 48.5%; }
-        .delete { color: @cRed; }
+        .delete { color: var(--cRed); }
         .pop__action.full { width: 100%; }
-        .pop__action__url { width: 100%; padding: 8px 0; color: @cG3; font-size: @fS; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .pop__action__url { width: 100%; padding: 8px 0; color: var(--cG3); font-size: var(--fS); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
         .disabled { opacity: 0.5;
             -webkit-filter: grayscale(100%);
             -moz-filter: grayscale(100%);
@@ -76,19 +76,19 @@
 
 /* popup double confirm */
 .pop--confirm .pop__body { overflow: inherit !important; 
-    .pop__content { color: @cG1 !important; text-align: center; font-weight: normal; }
+    .pop__content { color: var(--cG1) !important; text-align: center; font-weight: normal; }
 }
 
 /* popup select menu */
 .pop.pop--select {
-    .pop__body { max-width: 500px; padding: 0 20px; background: @c2;
-        .pop__close { top: 15px; background: @c2; }
-        .pop__title { position: sticky; width: 100%; top: 0; left: 0; padding: 15px 0; text-align: left; color: #FFFFFF; font-size: @fM; font-weight: normal; background: @c2; z-index: 0; }
+    .pop__body { max-width: 500px; padding: 0 20px; background: var(--c2);
+        .pop__close { top: 15px; background: var(--c2); }
+        .pop__title { position: sticky; width: 100%; top: 0; left: 0; padding: 15px 0; text-align: left; color: #FFFFFF; font-size: var(--fM); font-weight: normal; background: var(--c2); z-index: 0; }
         .store__check-list { width: 100%; margin: -20px auto 0 auto;
             .store__check-list__group { flex-flow: column; gap: 0; padding: 0;
                 .store__check-list__option {
                     input { display: none; }
-                    label { display: inline-block; padding: 7px 0; color: #FFFFFF; text-align: left; border-radius: none; border: none; opacity: 0.5; 
+                    label { display: inline-block; width: 100%; padding: 7px 0; color: #FFFFFF; text-align: left; border-radius: none; border: none; opacity: 0.5; 
                         i { margin-right: 7px; }
                     }
                     input:checked + label { font-weight: 600; opacity: 1; }
@@ -97,7 +97,7 @@
         } 
 
         .pop__actions { margin-bottom: 20px;
-            .pop__action--white { color: @c2; background: #FFFFFF; }
+            .pop__action--white { color: var(--c2); background: #FFFFFF; }
         }
     }
 }

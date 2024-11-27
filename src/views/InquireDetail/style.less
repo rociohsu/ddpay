@@ -1,6 +1,6 @@
 @import "@/styles/main.less";
 
-body { background: @cBg; }
+body { background: var(--cBg); }
 .inquire-detail { width: 100%; max-width: 500px; padding: 20px 20px 120px 20px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 20px;
 
     .inquire-page { position: relative; 
@@ -8,31 +8,31 @@ body { background: @cBg; }
         box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.25); z-index: 0; 
 
         .pop__icons { width: 100%; display: flex; justify-content: center; margin: -60px 0 0 0;
-            .pop__icon { width: 80px; height: 80px; border: 8px solid @c1; border-radius: 99px; display: flex; align-items: center; justify-content: center; font-size: @fXL; font-weight: bolder;  background-color: white; box-shadow: 0px 5px 10px rgba(55, 84, 170, 0.2);
-                i, svg { color: @c1; }}
-            .pop__icon--green { border-color: @cGreen;
-                i, svg { color: @cGreen; }}
-            .pop__icon--red { border-color: @cRed;
-                i, svg { color: @cRed; }}
-            .pop__icon--orange { border-color: @cOrange;
-                i, svg { color: @cOrange; }}
+            .pop__icon { width: 80px; height: 80px; border: 8px solid var(--c1); border-radius: 99px; display: flex; align-items: center; justify-content: center; font-size: var(--fXL); font-weight: bolder;  background-color: white; box-shadow: 0px 5px 10px rgba(55, 84, 170, 0.2);
+                i, svg { color: var(--c1); }}
+            .pop__icon--green { border-color: var(--cGreen);
+                i, svg { color: var(--cGreen); }}
+            .pop__icon--red { border-color: var(--cRed);
+                i, svg { color: var(--cRed); }}
+            .pop__icon--orange { border-color: var(--cOrange);
+                i, svg { color: var(--cOrange); }}
         }
         
-        h2 { margin-top: 5px; color: @cGreen; font-size: @fXL; font-weight: normal; text-align: center; }
-        h2.red { color: @cRed; }
-        h2.orange{ color: @cOrange; }
-        h3 { font-size: @fXXL; font-weight: bold; text-align: center; }
+        h2 { margin-top: 5px; color: var(--cGreen); font-size: var(--fXL); font-weight: normal; text-align: center; }
+        h2.red { color: var(--cRed); }
+        h2.orange{ color: var(--cOrange); }
+        h3 { font-size: var(--fXXL); font-weight: bold; text-align: center; }
 
         .inquire-list {
             .inquire-list__group { display: grid; grid-template-columns: 40% 60%; justify-content: space-between; align-items: flex-start;
-                padding: 10px 0; border-bottom: 1px solid @cG5;
+                padding: 10px 0; border-bottom: 1px solid var(--cG5);
                 > span { padding: 5px 0; line-height: 120%; 
                     > b { margin-left: 7px; }
                 }
-                > span:nth-child(odd) { color: @cG3; }
+                > span:nth-child(odd) { color: var(--cG3); }
                 > span:nth-child(even) { display: inline-flex; flex-flow: nowrap; justify-content: flex-end; align-items: center; text-align: right; }
                 .payments-icons { width: fit-content; margin-right: 7px;
-                    > span { background: @cBg; }
+                    > span { background: var(--cBg); }
                 }
             }
             .inquire-list__group:last-child { border-bottom: none; }
@@ -49,7 +49,7 @@ body { background: @cBg; }
         display: flex; flex-flow: nowrap; justify-content: center; align-items: center; gap: 10px;
         button { display: flex; flex-flow: nowrap; justify-content: center; align-items: center;
             width: 100%; padding: 15px 10px; border-radius: 20px; 
-            font-size: @fL; font-weight: normal; cursor: pointer;
+            font-size: var(--fL); font-weight: normal; cursor: pointer;
 
             > i { display: inline-block; width: 20px; height: 20px; margin-right: 5px; }
 
@@ -57,13 +57,13 @@ body { background: @cBg; }
 
             .file-download { background: url('@/assets/icons/file-download.svg') no-repeat center; background-size: contain; }
         }
-        .cancel-btn { color: @cRed; background: #FFFFFF; border: 2px solid @cRed; }
+        .cancel-btn { color: var(--cRed); background: #FFFFFF; border: 2px solid var(--cRed); }
     }
 }
 
 /* popup double confirm */
 .pop--confirm .pop__body { overflow: inherit !important; 
-    .pop__content { color: @cG1 !important; text-align: center; font-weight: 500;
-        > span { color: @cG3; font-weight: normal; }
+    .pop__content { color: var(--cG1) !important; text-align: center; font-weight: 500;
+        > span { color: var(--cG3); font-weight: normal; }
     }
 }

@@ -33,18 +33,18 @@
 }
 
 // Components
-.header { width: 100%; height: 60px; padding: 10px 15px; top: 0; left: 0; position: sticky; display: flex; align-items: center; justify-content: space-between; background-color: @c2; overflow: hidden; z-index: 1;
+.header { width: 100%; height: 60px; padding: 10px 15px; top: 0; left: 0; position: sticky; display: flex; align-items: center; justify-content: space-between; background-color: var(--c2); overflow: hidden; z-index: 2;
   .header__left, .header__right { gap: 5px; display: flex; align-items: center; }
   a { min-width: 40px; min-height: 40px; padding: 0 5px; display: flex; align-items: center; justify-content: center; 
-    @media screen and (max-width: @sSE) { min-width: 30px; min-height: 30px; padding: 0; }
+    @media screen and (max-width: var(--sSE)) { min-width: 30px; min-height: 30px; padding: 0; }
   }
   .header__back img { height: 24px; }
   .header__menu img { height: 24px; }
   .header__home img { height: 24px; }
   .header__logo img { height: 28px; margin-top: 5px; }
   .profile__info { display: flex; flex-direction: column; align-items: flex-end; }
-  .profile__sub-name { margin-bottom: -2px; font-size: @fS; color: rgba(255, 255, 255, 0.60); }
-  .profile__name { font-size: @fM; color: white; text-align: right; line-height: 120%; }
+  .profile__sub-name { margin-bottom: -2px; font-size: var(--fS); color: rgba(255, 255, 255, 0.60); }
+  .profile__name { font-size: var(--fM); color: white; text-align: right; line-height: 120%; }
   .profile__img { width: 30px; height: 30px; border-radius: 99px; }
 }
 
@@ -52,23 +52,23 @@
 .pop--top .pop__body { padding: 40px 20px !important;
     .current-company {
         display: flex; flex-flow: wrap; flex-direction: column; justify-content: center; align-items: center;
-        .current-company__logo { display: flex; flex-flow: nowrap; justify-content: center; align-items: center; width: 80px; height: 80px; border: 2px solid @cG5; border-radius: 99em; overflow: hidden;
+        .current-company__logo { display: flex; flex-flow: nowrap; justify-content: center; align-items: center; width: 80px; height: 80px; border: 2px solid var(--cG5); border-radius: 99em; overflow: hidden;
             > img { display: block; width: 100%; height: auto; }
         }
-        .current-company__name { margin-top: 3px; font-size: @fL; font-weight: bold; text-align: center; }
+        .current-company__name { margin-top: 3px; font-size: var(--fL); font-weight: bold; text-align: center; }
     }
 
     .other-list { width: 100%; display: flex; flex-flow: wrap; flex-direction: column; justify-content: center; align-items: center; gap: 10px;
         .other-list__item { width: 100%; padding: 10px; display: flex; flex-flow: nowrap; justify-content: flex-start; align-items: center; gap: 10px; border-radius: 10px;
-            &:hover { background: @cBg; }
+            &:hover { background: var(--cBg); }
 
-            .other-list__item__logo { display: flex; flex-flow: nowrap; justify-content: center; align-items: center; width: 30px; height: 30px; border: 2px solid @cG5; border-radius: 99em; overflow: hidden;
+            .other-list__item__logo { display: flex; flex-flow: nowrap; justify-content: center; align-items: center; width: 30px; height: 30px; border: 2px solid var(--cG5); border-radius: 99em; overflow: hidden;
                 > img { display: block; width: 100%; height: auto; }
-                > i { color: @cG3; font-size: @fM; }
+                > i { color: var(--cG3); font-size: var(--fM); }
             }
-            .other-list__item__name { width: calc(100% - 40px); color: @cG1; font-weight: 600;
-                &.add { color: @cG3; font-weight: normal; }
-                &.logout { color: @cG3; font-weight: normal; }
+            .other-list__item__name { width: calc(100% - 40px); color: var(--cG1); font-weight: 600;
+                &.add { color: var(--cG3); font-weight: normal; }
+                &.logout { color: var(--cG3); font-weight: normal; }
             }  
         }
     }
@@ -84,28 +84,28 @@
     &.pop--top { padding: 75px 15px 15px 15px; align-items: flex-start; 
         .pop__body { max-width: 500px; /* overflow-y: visible; */ animation-name: popupup; border-radius: 20px; box-shadow: -10px 0px 10px 0px rgba(55, 84, 170, 0.05), 0px 0px 10px 0px rgba(55, 84, 170, 0.20); }}
     .pop__body { width: 100%; max-width: 1024px; max-height: 100%; padding: 20px; border-radius: 20px; position: relative; display: flex; flex-direction: column; align-items: center; gap: 20px; background-color: white; overflow-y: auto; animation-name: popup; animation-duration: 0.5s; animation-iteration-count: 1;
-        .pop__close { width: 30px; height: 30px; min-height: 30px; margin: 0 -5px -45px auto; border-radius: 99px; top: -5px; position: sticky; display: flex; align-items: center; justify-content: center; color: @cG4; background-color: rgba(255, 255, 255, 0.75); z-index: 1;
+        .pop__close { width: 30px; height: 30px; min-height: 30px; margin: 0 -5px -45px auto; border-radius: 99px; top: -5px; position: sticky; display: flex; align-items: center; justify-content: center; color: var(--cG4); background-color: rgba(255, 255, 255, 0.75); z-index: 1;
             &.pop__close--fixed { margin: 0; top: 17px; right: 17px; position: fixed; background-color: rgba(0,0,0,0.9); box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
                 i, svg { color: white; }}}
         .pop__icons { width: 100%; display: flex; justify-content: center; margin: -70px 0 0 0;
-            .pop__icon { width: 100px; height: 100px; border: 8px solid @c1; border-radius: 99px; display: flex; align-items: center; justify-content: center; font-size: @fXXL; font-weight: bolder;  background-color: white; box-shadow: 0px 5px 10px rgba(55, 84, 170, 0.2);
-                i, svg { color: @c1; }}
-            .pop__icon--green { border-color: @cGreen;
-                i, svg { color: @cGreen; }}
-            .pop__icon--red { border-color: @cRed;
-                i, svg { color: @cRed; }}
-            .pop__icon--orange { border-color: @cOrange;
-                    i, svg { color: @cOrange; }}
+            .pop__icon { width: 100px; height: 100px; border: 8px solid var(--c1); border-radius: 99px; display: flex; align-items: center; justify-content: center; font-size: var(--fXXL); font-weight: bolder;  background-color: white; box-shadow: 0px 5px 10px rgba(55, 84, 170, 0.2);
+                i, svg { color: var(--c1); }}
+            .pop__icon--green { border-color: var(--cGreen);
+                i, svg { color: var(--cGreen); }}
+            .pop__icon--red { border-color: var(--cRed);
+                i, svg { color: var(--cRed); }}
+            .pop__icon--orange { border-color: var(--cOrange);
+                    i, svg { color: var(--cOrange); }}
         }
-        .pop__title { display: block; width: 100%; font-size: @fL; font-weight: bold; color: @c2; text-align: left; }
-        .pop__title__fs { font-size: @fL; color: @cG3; font-weight: 500; }
+        .pop__title { display: block; width: 100%; font-size: var(--fL); font-weight: bold; color: var(--c2); text-align: left; }
+        .pop__title__fs { font-size: var(--fL); color: var(--cG3); font-weight: 500; }
         .pop__title + .pop__title__fs { margin-top: -20px; }
-        .pop__content { margin-top: -20px; font-size: @fL; color: @cG3; }
+        .pop__content { margin-top: -20px; font-size: var(--fL); color: var(--cG3); }
         .pop__actions { width: 100%; display: flex; justify-content: space-between; align-items: flex-end; gap: 10px; }
-        .pop__action { width: 100%; height: 50px; padding: 0 20px; border-radius: 30px; gap: 10px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: @fL; background-color: @c1; }
-        .pop__action--green { background-color: @c2; }
-        .pop__action--red { background-color: @cRed; }
-        .pop__action--minor { color: @cG2; background-color: @cBg; }
+        .pop__action { width: 100%; height: 50px; padding: 0 20px; border-radius: 30px; gap: 10px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: var(--fL); background-color: var(--c1); }
+        .pop__action--green { background-color: var(--c2); }
+        .pop__action--red { background-color: var(--cRed); }
+        .pop__action--minor { color: var(--cG2); background-color: var(--cBg); }
     }
 }
 @keyframes popup { 0% { margin-bottom: -100vh; opacity: 0; } 50% { opacity: 1; } 100% { margin-bottom: 0; opacity: 1; }}
@@ -117,13 +117,13 @@
     span:not(.spacer-line) { display: block; width: 30px; margin: 0; background: #FFFFFF; border-radius: 6px; overflow: hidden;
         img { display: block; width: 100%; height: auto; margin: 0 auto; }
     }
-    .spacer-line { height: 24px; border-left: 1px solid @cG4; border-radius: 0; }
+    .spacer-line { height: 24px; border-left: 1px solid var(--cG4); border-radius: 0; }
 }
 
 /* switch開關共用 */
 .setting__switch { width: 36px;
     input[type=checkbox] { display: none; }
-    input[type=checkbox] + label { display: block; position: relative; width: 36px; height: 21px; background: @cG4; border: 2px solid @cG4; border-radius: 99em; 
+    input[type=checkbox] + label { display: block; position: relative; width: 36px; height: 21px; background: var(--cG4); border: 2px solid var(--cG4); border-radius: 99em; 
         .switch__inner { display: block;
             width: 200%; margin-left: -100%;
             transition: margin 0.3s ease-in 0s;
@@ -135,7 +135,7 @@
     }
 
     input[type=checkbox]:checked + label {
-        background: @c1; border-color: @c1;
+        background: var(--c1); border-color: var(--c1);
         .switch__inner { margin-left: 0; }
         .switch__switch { right: 0px; }
     }
@@ -148,36 +148,36 @@
 
 /* 下方按鈕共用 */
 .bottom-btns { display: flex; flex-flow: wrap; justify-content: space-between; align-items: center; margin-top: 30px; gap: 8px;
-    a:not(.button) { color: @c2; text-decoration: underline !important; white-space: nowrap; }
+    a:not(.button) { color: var(--c2); text-decoration: underline !important; white-space: nowrap; }
     button, .button { display: inline-block; padding: 7px 21px; color: #FFFFFF; font-weight: 600; white-space: nowrap; 
-        background: @c2; border-radius: 99em; border: none;
+        background: var(--c2); border-radius: 99em; border: none;
         i { margin-left: 5px; }
     }
-    .bottom-btns--prev { color: @c2; font-weight: bold; background: none; 
+    .bottom-btns--prev { color: var(--c2); font-weight: bold; background: none; 
         i { margin: 0 5px 0 0; }
     }
-    .bottom-btns--read-only { background: @cG4; }
-    .bottom-btns--save { color: @c2; background: @cBg; }
+    .bottom-btns--read-only { background: var(--cG4); }
+    .bottom-btns--save { color: var(--c2); background: var(--cBg); }
     .bottom-btns--full { width: 100%; max-width: 350px; margin: 0 auto; }
 }
 
 /* 暫無資料共用樣式 */
 .nodata { min-height: 80dvh; display: flex; flex-flow: column; justify-content: center; align-items: center; text-align: center;
     .nodata__icon { width: 100%; max-width: 100px; margin: 0 auto; }
-    > h2, > h3 { margin: 10px auto; font-size: @fXL; font-weight: normal; }
-    > h3 { color: @cG3; }
-    p { color: @cG3; }
+    > h2, > h3 { margin: 10px auto; font-size: var(--fXL); font-weight: normal; }
+    > h3 { color: var(--cG3); }
+    p { color: var(--cG3); }
 }
 
 /* 頁碼共用元件 */
 .pager { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; 
     > span, > a { display: inline-flex; justify-content: center; align-items: center; border-radius: 10px;
-        width: 30px; height: 30px; padding: 5px 0; color: @cG3; text-align: center; }
+        width: 30px; height: 30px; padding: 5px 0; color: var(--cG3); text-align: center; }
     > a { text-decoration: nono; cursor: pointer; }
     > a:not(.disabled):hover { box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
-    .prev, .next { background: @cBg; }
+    .prev, .next { background: var(--cBg); }
     .prev { margin-right: 35px; }
     .next { margin-left: 35px; }
-    .current { color: #FFFFFF; background: @c2; }
-    .disabled { color: @cG5; background: none; cursor: text; }
+    .current { color: #FFFFFF; background: var(--c2); }
+    .disabled { color: var(--cG5); background: none; cursor: text; }
 }

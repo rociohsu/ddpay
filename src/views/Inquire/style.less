@@ -2,82 +2,82 @@
 
 .inquire { width: 100%; max-width: 500px; padding: 20px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 20px;
     .store-select { width: 100%; display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; gap: 5px;
-        padding: 7px 15px; background: @cBg; border-radius: 10px;
-        b { font-weight: normal; font-size: @fM; text-align: left; }
-        i { color: @c2; }
+        padding: 7px 15px; background: var(--cBg); border-radius: 10px;
+        b { font-weight: normal; font-size: var(--fM); text-align: left; }
+        i { color: var(--c2); }
     }
 
     .search-select { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; gap: 5px;
-        padding: 5px 5px 5px 10px; background: @cBg; border-radius: 10px;
+        padding: 5px 5px 5px 10px; background: var(--cBg); border-radius: 10px;
 
         .searchbar { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center;
             width: 70%;
             input { width: calc(100% - 30px); }
-            button { width: 30px; color: @c2; background: none; }
+            button { width: 30px; color: var(--c2); background: none; }
         }
     } 
 
     .item-select { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center;
         width: 30%; padding: 5px 10px; background: #FFFFFF; border-radius: 8px; white-space: nowrap;
-        b { width: calc(100% - 20px); font-weight: normal; font-size: @fM; text-align: left; overflow: hidden; }
-        i { width: 20px; color: @c2; }
+        b { width: calc(100% - 20px); font-weight: normal; font-size: var(--fM); text-align: left; overflow: hidden; }
+        i { width: 20px; color: var(--c2); }
     }
 
     .filter { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center;
-        .item-select { width: 32%; background: @cBg; 
+        .item-select { width: 32%; background: var(--cBg); 
             b { font-weight: normal; }
         }
-        .item-select.date b { color: @c2; }
+        .item-select.date b { color: var(--c2); }
         .calendar { display: inline-block; width: 14px; height: 14px; 
             background: url('@/assets/icons/calendar.svg') no-repeat center; background-size: contain; }
     }
 
     .inquire-list {
-        .inquire-list__date { color: @cG1; font-weight: bold; }
+        .inquire-list__date { color: var(--cG1); font-weight: bold; }
         .inquire-list__row { display: grid; grid-template-columns: 40px 2fr 1fr 30px; justify-content: space-between; align-items: center; 
-            padding: 10px 0; border-bottom: 1px solid @cG5;
+            padding: 10px 0; border-bottom: 1px solid var(--cG5);
 
-            .payments-icons > span { background: @cBg; }
+            .payments-icons > span { background: var(--cBg); }
             .inquire-list__detail {
-                > * { color: @cG3; font-size: @fS; }
-                .inquire-list__name { color: @cG1; font-size: @fM; }
-                time { position: relative; margin-left: 8px; padding-left: 8px; font-size: @fS; }
+                > * { color: var(--cG3); font-size: var(--fS); }
+                .inquire-list__name { color: var(--cG1); font-size: var(--fM); }
+                time { position: relative; margin-left: 8px; padding-left: 8px; font-size: var(--fS); }
                 time::before { position: absolute; display: block; content: ''; 
                     height: 14px; left: -2px; top: 4px;
-                    border-left: 2px solid @cG5; 
+                    border-left: 2px solid var(--cG5); 
                 }
             }
             .inquire-list__amount, 
             .inquire-list__amount--fail,
             .inquire-list__amount--pending {
-                * { display: block; color: @cGreen; font-size: @fXXL; font-weight: bold; text-align: right; }
-                .note { font-size: @fM; }
-                .point { font-size: @fS; font-weight: normal; color: @cG3; }
+                * { display: block; color: var(--cGreen); font-size: var(--fXXL); font-weight: bold; text-align: right; }
+                .note { font-size: var(--fM); }
+                .point { font-size: var(--fS); font-weight: normal; color: var(--cG3); }
             }
-            .inquire-list__amount--fail * { color: @cRed; }
-            .inquire-list__amount--pending * { color: @cOrange; }
-            .inquire-list__action { color: @cG4; text-align: right; }
+            .inquire-list__amount--fail * { color: var(--cRed); }
+            .inquire-list__amount--pending * { color: var(--cOrange); }
+            .inquire-list__action { color: var(--cG4); text-align: right; }
         }
         .inquire-list__row:last-child { border-bottom: none; }
     }
 
     .inquire__radio-list { width: 100%; margin: 20px auto;
-        .title { display: block; margin-bottom: -5px; font-size: @fS; font-weight: bold; }
-        .content { width: 100%; font-size: @fM; color: @cG3; }
+        .title { display: block; margin-bottom: -5px; font-size: var(--fS); font-weight: bold; }
+        .content { width: 100%; font-size: var(--fM); color: var(--cG3); }
         .inquire__radio-list__group { display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 0;
             .inquire__radio-list__option { width: 100%;
                 input { display: none; }
                 label { display: block; width: 100%; padding: 10px; 
-                    font-size: @fL; text-align: center; border-radius: 10px; border: 2px solid @cG5; }
-                input:checked + label { border-color: @c1; }
+                    font-size: var(--fL); text-align: center; border-radius: 10px; border: 2px solid var(--cG5); }
+                input:checked + label { border-color: var(--c1); }
             }
         }
     }
 
     .pop--select {
-        .pop__body { padding: 0 20px; background: @c2; }
-        .pop__close { top: 15px; background: @c2; }
-        .pop__title { position: sticky; width: 100%; top: 0; left: 0; padding: 15px 0; text-align: left; color: #FFFFFF; font-weight: normal; background: @c2; z-index: 0; }
+        .pop__body { padding: 0 20px; background: var(--c2); }
+        .pop__close { top: 15px !important; background: var(--c2); }
+        .pop__title { position: sticky; width: 100%; top: 0; left: 0; padding: 15px 0; text-align: left; color: #FFFFFF !important; font-weight: normal; background: var(--c2); z-index: 0; }
         .inquire__radio-list { width: 80%; margin: -20px auto 20px auto;
             .inquire__radio-list__group { flex-flow: column; gap: 0; padding: 0;
                 .inquire__radio-list__option { 
@@ -86,39 +86,54 @@
                 }
             }
         }
+
+        .store__radio-list { width: 100%; margin: -20px auto 20px auto;
+            .store__radio-list__group { flex-flow: column; gap: 0; padding: 0;
+                .store__radio-list__option { 
+                    input { display: none; }
+                    label { padding: 10px 0; display: grid; grid-template-columns: 70% 30%; justify-content: space-between; align-items: center;
+                        > span { color: #FFFFFF; }
+                        > span:nth-child(even) { text-align: right; }
+                        border-radius: none; border: none; opacity: 0.5;
+                    }
+                    input:checked + label { font-weight: 600; opacity: 1; }
+                }
+            }
+        }
     }
+    .pop--dateselect .pop__close { top: -5px !important; }
 }
 
 .pop--dateselect {
-    .pop__title { color: @cG1; font-weight: normal; font-size: @fL; }
+    .pop__title { color: var(--cG1); font-weight: normal; font-size: var(--fL); }
     .pop__content { width: 100%; }
     .select { position: relative; width: 100%; height: 44px; margin: 2px 0; display: flex; align-items: center;
-        select { width: 100%; height: 100%; padding: 0 35px 0 10px; color: @cG2; font-size: @fL; border: solid 1px @cG5; border-radius: 10px; background: none;
-            option:disabled { color: @cG4; }
+        select { width: 100%; height: 100%; padding: 0 35px 0 10px; color: var(--cG2); font-size: var(--fL); border: solid 1px var(--cG5); border-radius: 10px; background: none;
+            option:disabled { color: var(--cG4); }
         }
-        select:focus { -webkit-text-fill-color: @c2; border-color: @c2; }
-        i { display: flex; justify-content: center; align-items: center; position: absolute; width: 30px; height: 30px; right: 5px; top: 0; bottom: 0; margin: auto 0; pointer-events: none; color: @cG3; }
-        select:focus + i { color: @c2; }
+        select:focus { -webkit-text-fill-color: var(--c2); border-color: var(--c2); }
+        i { display: flex; justify-content: center; align-items: center; position: absolute; width: 30px; height: 30px; right: 5px; top: 0; bottom: 0; margin: auto 0; pointer-events: none; color: var(--cG3); }
+        select:focus + i { color: var(--c2); }
     }
 
     .dateselect__top { margin-top: 15px;
         display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center;  
-        button { width: 30px; color: @c2; background: none; cursor: pointer; }
+        button { width: 30px; color: var(--c2); background: none; cursor: pointer; }
         .select { width: calc(46% - 30px); }
     }
 
     .dateselect__bottom { margin-bottom: 15px;
         display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center;  
-        > span { width: 36px; font-size: @fM; letter-spacing: 1px; line-height: 110%; }
+        > span { width: 36px; font-size: var(--fM); letter-spacing: 1px; line-height: 110%; }
         .select { width: calc(46% - 36px); cursor: pointer; }
     }
 
     .dateselect__calendar { display: grid; grid-template-columns: repeat(7, 1fr); margin: 20px auto;
         > div { padding: 10px 5px; text-align: center; cursor: pointer; }
-        .title { border-bottom: 1px solid @cG5; cursor: text; }
-        .disabled { color: @cG4; cursor: text; }
-        .selected { background: @cG7; }
-        .selected.start { color: #FFFFFF; background: @c2; border-radius: 99em 0 0 99em; }
-        .selected.end { color: #FFFFFF; background: @c2; border-radius: 0 99em 99em 0; }
+        .title { border-bottom: 1px solid var(--cG5); cursor: text; }
+        .disabled { color: var(--cG4); cursor: text; }
+        .selected { background: var(--cG7); }
+        .selected.start { color: #FFFFFF; background: var(--c2); border-radius: 99em 0 0 99em; }
+        .selected.end { color: #FFFFFF; background: var(--c2); border-radius: 0 99em 99em 0; }
     }
 }
