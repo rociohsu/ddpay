@@ -33,6 +33,18 @@ import "./style.less";
                 <span class="store-mainmenu__name">對帳報表匯出</span>
                 <span class="store-mainmenu__icon"><i class="notes-linear"></i></span>
             </a>
+
+            <div class="store-mainmenu__columnx2">
+                <a href="/home">
+                    <span class="store-mainmenu__name">金流申請</span>
+                    <span class="store-mainmenu__icon"><i class="credit-card"></i></span>
+                </a>
+
+                <a href="/point">
+                    <span class="store-mainmenu__name">點數申請</span>
+                    <span class="store-mainmenu__icon"><i class="p-point"></i></span>
+                </a>
+            </div>
         </div>
 
         <h1><b>鬍鬚張中正店</b><i class="fa-solid fa-store fa-xl"></i></h1>
@@ -137,9 +149,8 @@ import "./style.less";
 					</div>
 				</div>
 
-				<span class="pop__title"></span>
+				<span class="pop__title__fs">確定儲存以下更新？</span>
 				<span class="pop__content">
-					確定儲存以下更新？<br>
 					<span class="fs">啟用LINE Pay ABC<br>停用街口支付</span>
 				</span>
 
@@ -181,6 +192,26 @@ import "./style.less";
                             </label>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+
+        <section class="pop pop--center pop--save-update" style="display: flex;">
+			<div class="pop__body">
+				<div class="pop__icons">
+					<div class="pop__icon pop__icon--orange">
+						<i class="fa-solid fa-exclamation fa-2xl"></i>
+					</div>
+				</div>
+
+				<span class="pop__title__fs">全新推出「小樹點」點數服務</span>
+				<span class="pop__content">
+					<span class="fs">小數點介紹</span>
+				</span>
+
+				<div class="pop__actions">
+					<button class="pop__action pop__action--minor">稍後設定</button>
+					<a href="/point" class="pop__action pop__action--green">前往啟用</a>
 				</div>
 			</div>
 		</section>

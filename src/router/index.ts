@@ -61,6 +61,11 @@ const router = createRouter({
           name: "manage",
           component: () => import("../views/Manage/indexView.vue"),
         },
+        {
+          path: "/point",
+          name: "point",
+          component: () => import("../views/Point/indexView.vue"),
+        },
       ],
     },
   ],
