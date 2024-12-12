@@ -112,6 +112,23 @@
 @keyframes popdown { 0% { margin-bottom: 0; opacity: 1; } 50% { opacity: 1; } 100% { margin-bottom: -100vh; opacity: 0; }}
 @keyframes popupup { 0% { margin-top: -100vh; opacity: 0; } 50% { opacity: 1; } 100% { margin-top: 0; opacity: 1; }}
 
+/* 條款popup共用 */
+.pop--terms {
+    .pop__body { padding: 0 20px; }
+    .pop__close { top: 15px !important; }
+    .pop__title { position: sticky; width: 100%; top: 0; left: 0; padding: 15px 0; text-align: left; background: linear-gradient(180deg, #FFF 81.82%, rgba(255, 255, 255, 0.00) 100%); z-index: 0; }
+    .pop__actions { position: sticky; bottom: 0; left: 0; padding: 10px 0; background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 21.43%);
+        .pop__action:not(.pop__action--minor) { background: var(--c2); }
+        .pop__action--tobottom { display: flex; flex-flow: nowrap; justify-content: center; align-items: center;
+            position: absolute; width: 30px; height: 30px; bottom: 70px; left: 0; right: 0; margin: 0 auto; padding: 0; background: var(--c1) !important; 
+        }
+    }
+    .pop__content { width: 100%;
+        ul, ol { margin-left: 20px; }
+        li, p { margin: 0 0 20px 0; font-size: var(--fM); color: var(--cG3); }
+    } 
+}
+
 /* 付款方式icon共用 */
 .payments-icons { width: 100%; display: flex; flex-flow: nowrap; align-items: center; gap: 10px;
     span:not(.spacer-line) { display: block; width: 30px; margin: 0; background: #FFFFFF; border-radius: 6px; overflow: hidden;
