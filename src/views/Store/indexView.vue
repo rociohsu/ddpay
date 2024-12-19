@@ -24,14 +24,21 @@ import "./style.less";
                 <span class="store-mainmenu__icon"><i class="card-search"></i></span>
             </a>
 
-            <a href="#">
-                <span class="store-mainmenu__name">營業日報表</span>
-                <span class="store-mainmenu__icon"><i class="clipboard-list"></i></span>
-            </a>
+            <div class="store-mainmenu__columnx2">
+                <a href="#">
+                    <span class="store-mainmenu__name">營業日報表</span>
+                    <span class="store-mainmenu__icon"><i class="clipboard-list"></i></span>
+                </a>
 
-            <a href="#">
-                <span class="store-mainmenu__name">對帳報表匯出</span>
-                <span class="store-mainmenu__icon"><i class="notes-linear"></i></span>
+                <a href="#">
+                    <span class="store-mainmenu__name">對帳報表</span>
+                    <span class="store-mainmenu__icon"><i class="notes-linear"></i></span>
+                </a>
+            </div>
+
+            <a href="/counter">
+                <span class="store-mainmenu__name">櫃位綁定</span>
+                <span class="store-mainmenu__icon"><i class="printer-linear"></i></span>
             </a>
 
             <div class="store-mainmenu__columnx2">

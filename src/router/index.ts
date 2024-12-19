@@ -66,6 +66,21 @@ const router = createRouter({
           name: "point",
           component: () => import("../views/Point/indexView.vue"),
         },
+        {
+          path: "/counter",
+          name: "counter",
+          component: () => import("../views/Counter/indexView.vue"),
+        },
+        {
+          path: "/counter-settings",
+          name: "counter-settings",
+          component: () => import("../views/Counter/counter-settings.vue"),
+        },
+        {
+          path: "/device-binding",
+          name: "device-binding",
+          component: () => import("../views/Counter/device-binding.vue"),
+        },
       ],
     },
   ],
