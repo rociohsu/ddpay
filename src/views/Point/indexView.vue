@@ -12,6 +12,13 @@ import "./style.less";
 
         <h1><b>第三方點數申請</b></h1>
 
+        <div class="nodata">
+            <div class="nodata__icon">
+                <img src="../../assets/icons/p-point-null.svg">
+            </div>
+            <h2>暫無點數</h2>
+        </div> 
+
         <div class="payment-way">
             <div class="payment-way__list">
                 <div class="payments-icons">
