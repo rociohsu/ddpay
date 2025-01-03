@@ -3,7 +3,9 @@
 
 .point {
     .payment-way .payment-way__list {
-        .payments-icons span:not(.spacer-line) { background: none; }
+        .payments-icons span:not(.spacer-line) { display: flex; justify-content: center; align-items: center; background: none; 
+            img { width: auto; height: 18px; margin-top: 1px; }
+        }
         .payments-name { font-weight: normal; }
         .payment-setting.deactivate { filter: grayscale(1); -webkit-filter: grayscale(1); opacity: 0.5; }
     }
